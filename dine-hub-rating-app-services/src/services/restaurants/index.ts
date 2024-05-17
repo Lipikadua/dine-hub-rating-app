@@ -9,7 +9,7 @@ import { v4 as uuidv4 } from "uuid";
 import { sendResponse } from "../../helpers/responder";
 
 import { getLogger, initLogger } from "../../utils/logger";
-import { ErrorMessage } from "utils/enums";
+import { ErrorMessage } from "../../utils/enums";
 
 const logger = getLogger("Documents");
 
@@ -79,7 +79,7 @@ const addRestaurant = async (event: any) => {
     .promise();
 
   return sendResponse(HttpStatusCode.Ok, ErrorMessage.RestaurantAdded, {
-    restaurant: newRestaurant,
+    restaurant: response,
   });
 };
 
