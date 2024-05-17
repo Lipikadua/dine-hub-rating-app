@@ -16,8 +16,6 @@ interface Restaurants {
 
 const RestaurantsList: React.FC = () => {
     const [data, setData] = useState<Restaurants[]>([]);
-    const [restaurants, setRestaurants] = useState(data);
-    const [avgRating, setAvgRating] = useState<number>();
 
 
     const [loading, setLoading] = useState(true);
@@ -26,7 +24,6 @@ const RestaurantsList: React.FC = () => {
         try {
             const response = await axios.get(`https://39tia1oajk.execute-api.us-east-1.amazonaws.com/dev/restaurants`);
             setData(response.data.data)
-            setRestaurants(response.data.data);
             setLoading(false);
 
         } catch (error) {
@@ -45,7 +42,6 @@ const RestaurantsList: React.FC = () => {
     if (loading) {
         return <div>Loading...</div>;
     }
-    console.log('data before load restaurants', restaurants)
     console.log('data before load data', data)
 
 
