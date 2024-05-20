@@ -24,4 +24,7 @@ export enum ErrorMessage {
   HttpMethodNotSupported = "HTTP method not supported",
   RestaurantAdded = "Restaurant added successfully",
   RestaurantNotFound = "Restaurant not found",
+  RestaurantUpdated = "Restaurant updated successfully",
+  RestaurantDeleted = "Restaurant deleted successfully",
+  RatingAdded = "Rating added successfully"
 }

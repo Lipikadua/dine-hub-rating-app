@@ -6,7 +6,7 @@ const Config = ({ children }: { children: React.ReactNode }) => {
         <ConfigProvider
             theme={{
                 token: {
-                    // colorBgTextHover: "#F2F7F8",
+                    colorBgTextHover: "#F2F7F8",
                     colorText: '#002244',
                     colorBgSpotlight: '#1f6fbe',
                     colorLinkActive: '#F2F7F8',
@@ -17,8 +17,8 @@ const Config = ({ children }: { children: React.ReactNode }) => {
                         colorTextPlaceholder: '#8c8c8c',
                     },
                     Select: {
-                        colorBorder: '#bfbfbf',
-                        colorTextPlaceholder: '#8c8c8c',
+                        colorBorder: '#002244',
+                        colorTextPlaceholder: '#002244',
                     },
                     Table: {
                         colorPrimary: primaryColor,
@@ -28,7 +28,7 @@ const Config = ({ children }: { children: React.ReactNode }) => {
                         bodySortBg: selectedColor,
                         rowSelectedBg: secondaryColor,
                         rowHoverBg: selectedColor,
-                        fontSize: 15,
+                        fontSize: 16,
                     },
                 },
             }}

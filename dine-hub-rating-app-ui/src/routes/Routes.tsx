@@ -3,6 +3,7 @@ import AppLayout from "../common-components/Layout";
 import ROUTES from "./RoutesConstants";
 import RestaurantsList from '../components/restaurants-list/RestaurantsList'
 import App from "../App";
+import NewRestaurant from "../components/restaurants-list/add/NewRestaurant";
 
 const Routing = () => {
   return (
@@ -20,10 +21,9 @@ const RouterApp = () => {
         </Route>
         <Route path={ROUTES.RESTAURANTS} element={<Routing />}>
           <Route index element={< RestaurantsList />} />
-          {/* <Route path={ROUTES.NEW_RESTAURANTS} element={<NewQuestionaire />} /> */}
           {/* <Route
             path={`${ROUTES.NEW_RESTAURANTS}`}
-            element={<NewQuestionaire />}
+            element={<NewRestaurant />}
           />
           <Route
             path={ROUTES.EDIT_RESTAURANTS/:id}
